@@ -1,18 +1,11 @@
-Here is the complete Markdown text for your `README.md` file. You can copy everything below the line and paste it directly into your file:
+**Verilog Priority Encoder**
 
----
-
-```markdown
-# Verilog Priority Encoder
-
-## Overview
+**Overview**
 This project contains a digital hardware implementation of a **Priority Encoder** written in Verilog, accompanied by a comprehensive testbench for simulation and verification. 
 
 A priority encoder is a circuit that inspects multiple binary inputs and selects the highest-priority active input, outputting its corresponding binary code along with a valid flag.
 
----
-
-## Directory Structure
+**Directory Structure**
 ```text
 priorityencoder/
 ├── verilog/
@@ -22,14 +15,10 @@ priorityencoder/
 ├── sim/                       # Directory for simulation outputs and waveforms
 └── README.md                  # Project documentation
 
-```
+**How It Works**
 
----
-
-## How It Works
-
-* **Inputs:** A multi-bit vector where each bit represents a request line.
-* **Outputs:**
+Inputs: A multi-bit vector where each bit represents a request line.
+Outputs:
 * Encoded binary value corresponding to the highest-priority active bit.
 * A valid status signal indicating whether any valid input was asserted.
 
@@ -49,16 +38,14 @@ Open your terminal in the repository root and run:
 ```bash
 iverilog -o priority_encoder_sim.vvp priorityencoder/verilog/priority_encoder.v priorityencoder/tb/priorityencoder_tb.v
 
-```
-
-### 2. Run the Simulation
+**2. Run the Simulation**
 
 Execute the compiled simulation file using `vvp`:
 
-```bash
+bash
 vvp priority_encoder_sim.vvp
 
-```
+
 
 ### 3. View Waveforms (Optional)
 
