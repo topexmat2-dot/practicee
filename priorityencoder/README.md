@@ -62,9 +62,3 @@ If your testbench is configured to dump VCD waveform files, you can view the sig
 
 ```bash
 gtkwave waveform.vcd
-
-```
-
-```
-
-```
