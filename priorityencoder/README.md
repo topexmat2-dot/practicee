@@ -56,7 +56,7 @@ vvp priority_encoder_sim.vvp
 
 ```
 
-### 3. View Waveforms (Optional)
+### 3. View Waveforms
 
 If your testbench is configured to dump VCD waveform files, you can view the signal transitions in GTKWave:
 
