@@ -9,7 +9,7 @@ A priority encoder is a circuit that inspects multiple binary inputs and selects
 ---
 
 ## Directory Structure
-```
+```text
 priorityencoder/
 ├── verilog/
 │   └── priority_encoder.v     # Design Under Test (DUT) source code
