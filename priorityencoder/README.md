@@ -2,14 +2,14 @@
 # Verilog Priority Encoder
 
 ## Overview
-This project contains a digital hardware implementation of a **Priority Encoder** written in Verilog, accompanied by a comprehensive testbench for simulation and verification. 
+This project contains a digital hardware implementation of a Priority Encoder written in Verilog, accompanied by a comprehensive testbench for simulation and verification. 
 
 A priority encoder is a circuit that inspects multiple binary inputs and selects the highest-priority active input, outputting its corresponding binary code along with a valid flag.
 
 ---
 
 ## Directory Structure
-```text
+```
 priorityencoder/
 ├── verilog/
 │   └── priority_encoder.v     # Design Under Test (DUT) source code
