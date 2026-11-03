@@ -6,7 +6,7 @@ This project contains a digital hardware implementation of a **Priority Encoder*
 A priority encoder is a circuit that inspects multiple binary inputs and selects the highest-priority active input, outputting its corresponding binary code along with a valid flag.
 
 **Directory Structure**
-```text
+text
 priorityencoder/
 ├── verilog/
 │   └── priority_encoder.v     # Design Under Test (DUT) source code
@@ -35,7 +35,7 @@ You can simulate this design using open-source tools like **Icarus Verilog (`ive
 
 Open your terminal in the repository root and run:
 
-```bash
+bash
 iverilog -o priority_encoder_sim.vvp priorityencoder/verilog/priority_encoder.v priorityencoder/tb/priorityencoder_tb.v
 
 **2. Run the Simulation**
@@ -47,15 +47,9 @@ vvp priority_encoder_sim.vvp
 
 
 
-### 3. View Waveforms (Optional)
+**### 3. View Waveforms**
 
 If your testbench is configured to dump VCD waveform files, you can view the signal transitions in GTKWave:
 
-```bash
+bash
 gtkwave waveform.vcd
-
-```
-
-```
-
-```
