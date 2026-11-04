@@ -10,12 +10,10 @@ The project also includes a robust testbench designed to verify functional corre
 
 ## Architecture & Design
 1. **1-bit Full Adder (`rtl/full_adder.v`):**
-   * Computes the sum and carry-out using basic logic equations:
-     * $\text{Sum} = A \oplus B \oplus C_{in}$
-     * $C_{out} = (A \land B) + (C_{in} \land (A \oplus B))$
+   * Computes the sum and carry-out using basic logic equations
 2. **Parameterized Ripple Carry Adder (`rtl/ripple_adder.v`):**
-   * Uses a `generate` loop to instantiate $N$ copies of the 1-bit full adder.
-   * Chains the carry-out ($C_{out}$) of each stage to the carry-in ($C_{in}$) of the next stage, forming the classic ripple carry chain.
+   * Uses a `generate` loop to instantiate N copies of the 1-bit full adder.
+   * Chains the carry-out of each stage to the carry-in (C_{in}) of the next stage, forming the classic ripple carry chain.
 
 ---
 
@@ -40,13 +38,8 @@ The ripple carry adder's speed is limited by the carry propagation delay through
 
 ### How It's Measured in the Testbench:
 
-1. **Critical Path Stimulus:** The testbench applies an input transition that forces a carry to ripple through all $N$ stages (e.g., transitioning inputs such that the carry propagates from stage 0 all the way to stage $N-1$).
+1. **Critical Path Stimulus:** The testbench applies an input transition that forces a carry to ripple through all N stages (e.g., transitioning inputs such that the carry propagates from stage 0 all the way to stage N-1).
 2. **Time Tracking:** Using Verilog system tasks (`$time`), the testbench records the exact timestamp when inputs change and compares it against the timestamp when the final output/carry stabilizes.
-3. **Delay Calculation:**
-
-$$\text{Propagation Delay} = T_{\text{output valid}} - T_{\text{input stable}}$$
-
-
 
 ---
 
