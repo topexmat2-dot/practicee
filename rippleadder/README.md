@@ -1,7 +1,7 @@
 # Parameterized Ripple Carry Adder in Verilog
 
 ## Overview
-This project implements a scalable **Ripple Carry Adder (RCA)** in Verilog, designed from the ground up by cascading fundamental **1-bit Full Adders**. The architecture features a parameterizable bit-width ($N$), allowing it to scale to any arbitrary word size (e.g., 4-bit, 8-bit, 16-bit, 32-bit). 
+This project implements a scalable **Ripple Carry Adder (RCA)** in Verilog, designed from the ground up by cascading fundamental **1-bit Full Adders**. The architecture features a parameterizable bit-width **(N)**, allowing it to scale to any arbitrary word size (e.g., 4-bit, 8-bit, 16-bit, 32-bit). 
 
 The project also includes a robust testbench designed to verify functional correctness and measure the **worst-case propagation delay** across carry-chain transitions.
 
@@ -39,7 +39,7 @@ The ripple carry adder's speed is limited by the carry propagation delay through
 ### How It's Measured in the Testbench:
 
 1. **Critical Path Stimulus:** The testbench applies an input transition that forces a carry to ripple through all N stages (e.g., transitioning inputs such that the carry propagates from stage 0 all the way to stage N-1).
-2. **Time Tracking:** Using Verilog system tasks (`$time`), the testbench records the exact timestamp when inputs change and compares it against the timestamp when the final output/carry stabilizes.
+2. **Time Tracking:** Using Verilog system tasks (`time`), the testbench records the exact timestamp when inputs change and compares it against the timestamp when the final output/carry stabilizes.
 
 ---
 
