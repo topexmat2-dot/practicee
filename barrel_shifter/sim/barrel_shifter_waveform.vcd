@@ -1,0 +1,72 @@
+$date
+	Thu Nov  5 20:31:54 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module barrel_shifter_tb $end
+$var wire 32 ! data_out [31:0] $end
+$var reg 32 " data_in [31:0] $end
+$var reg 2 # mode [1:0] $end
+$var reg 5 $ shamt [4:0] $end
+$scope module uut $end
+$var wire 32 % data_in [31:0] $end
+$var wire 2 & mode [1:0] $end
+$var wire 5 ' shift_amount [4:0] $end
+$var reg 32 ( data_out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11110000 (
+b100 '
+b0 &
+b1111 %
+b100 $
+b0 #
+b1111 "
+b11110000 !
+$end
+#10
+b1111000000000000000000000000 !
+b1111000000000000000000000000 (
+b11110000000000000000000000000000 "
+b11110000000000000000000000000000 %
+b1 #
+b1 &
+#20
+b11111111000000000000000000000000 !
+b11111111000000000000000000000000 (
+b10 #
+b10 &
+#30
+b1111000000000000000000000000 !
+b1111000000000000000000000000 (
+b1 #
+b1 &
+#40
+b10010001101000101011001111000 !
+b10010001101000101011001111000 (
+b0 $
+b0 '
+b10010001101000101011001111000 "
+b10010001101000101011001111000 %
+b0 #
+b0 &
+#50
+b11111111111111111111111111111111 !
+b11111111111111111111111111111111 (
+b11111 $
+b11111 '
+b10000000000000000000000000000000 "
+b10000000000000000000000000000000 %
+b10 #
+b10 &
+#60
