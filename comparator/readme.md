@@ -10,8 +10,8 @@ This project implements a scalable, parameterized **N-bit Magnitude Comparator**
 ## Architecture & Design
 * **Parameterization (`N`):** Allows scaling to any arbitrary bit-width (e.g., 4-bit, 8-bit, 16-bit).
 * **Mode Selection (`SIGNED_MODE`):** 
-  * `0`: Evaluates $A$ and $B$ as standard unsigned values.
-  * `1`: Evaluates $A$ and $B$ using 2's complement rules (where negative sign bits take precedence).
+  * `0`: Evaluates A and B as standard unsigned values.
+  * `1`: Evaluates A and B using 2's complement rules (where negative sign bits take precedence).
 * **Outputs:** 
   * `eq`: High if A == B
   * `lt`: High if A < B
@@ -23,11 +23,11 @@ This project implements a scalable, parameterized **N-bit Magnitude Comparator**
 ```text
 magnitude_comparator/
 ├── rtl/
-│   └── magnitude_comparator.v   # Parameterized comparator module
+│   └── magnitude_comparator.v   #This is the parameterized comparator module
 ├── tb/
-│   └── magnitude_comparator_tb.v # Testbench covering signed & unsigned cases
-├── sim/                         # Compiled simulation outputs and VCD waveforms
-└── README.md                    # Documentation
+│   └── magnitude_comparator_tb.v #This is the testbench covering signed & unsigned cases
+├── sim/                         #This is the compiled simulation outputs and VCD waveforms
+└── README.md                    # This is the documentation
 
 Simulation & Verification
 
