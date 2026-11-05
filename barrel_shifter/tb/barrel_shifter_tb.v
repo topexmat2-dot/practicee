@@ -8,7 +8,7 @@ module barrel_shifter_tb;
   // Instantiate Unit Under Test (UUT)
   barrel_shifter uut (
                    .data_in(data_in),
-                   .shamt(shamt),
+                   .shift_amount(shamt),
                    .mode(mode),
                    .data_out(data_out)
                  );
