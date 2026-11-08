@@ -1,16 +1,16 @@
 module alu_16bit (
     input  wire [15:0] A,
     input  wire [15:0] B,
-    input  wire [2:0]  opcode,   // 3-bit operation selector
+    input  wire [2:0]  opcode,
     output reg  [15:0] result,
-    output reg         zero,     // High if result is 16'h0000
-    output reg         carry,    // Carry-out from add/sub/shift
-    output reg         overflow  // 2's complement overflow flag
+    output reg         zero,
+    output reg         carry,
+    output reg         overflow
   );
 
   always @(*)
   begin
-    // Default flag and result initializations
+    // Flag and result initialization
     carry    = 1'b0;
     overflow = 1'b0;
     result   = 16'b0;
@@ -56,7 +56,6 @@ module alu_16bit (
       end
     endcase
 
-    // Zero flag evaluation
     zero = (result == 16'h0000);
   end
 
