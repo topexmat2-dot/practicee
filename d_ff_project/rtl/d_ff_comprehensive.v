@@ -1,4 +1,4 @@
-module d_ff_comprehensive (
+module d_flipflop(
     input  wire clk,
     input  wire rst_n,
     input  wire sync_rst,
