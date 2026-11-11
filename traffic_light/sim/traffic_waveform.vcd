@@ -1,0 +1,201 @@
+$date
+	Wed Nov 11 19:50:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module traffic_light_tb $end
+$var wire 3 ! light_b [2:0] $end
+$var wire 3 " light_a [2:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ rst_n $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ rst_n $end
+$var parameter 4 % S1_AG_BR $end
+$var parameter 4 & S2_AY_BR $end
+$var parameter 4 ' S3_AR_BG $end
+$var parameter 4 ( S4_AR_BY $end
+$var reg 3 ) light_a [2:0] $end
+$var reg 3 * light_b [2:0] $end
+$var reg 4 + next_state [3:0] $end
+$var reg 4 , state [3:0] $end
+$var reg 3 - timer [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 (
+b100 '
+b10 &
+b1 %
+$end
+#0
+$dumpvars
+b0 -
+b1 ,
+b1 +
+b100 *
+b1 )
+0$
+0#
+b1 "
+b100 !
+$end
+#5
+1#
+#10
+0#
+#12
+1$
+#15
+b1 -
+1#
+#20
+0#
+#25
+b10 -
+1#
+#30
+0#
+#35
+b10 +
+b11 -
+1#
+#40
+0#
+#45
+b100 !
+b100 *
+b10 "
+b10 )
+b100 +
+b0 -
+b10 ,
+1#
+#50
+0#
+#55
+b1 !
+b1 *
+b100 "
+b100 )
+b100 ,
+1#
+#60
+0#
+#65
+b1 -
+1#
+#70
+0#
+#75
+b10 -
+1#
+#80
+0#
+#85
+b1000 +
+b11 -
+1#
+#90
+0#
+#95
+b10 !
+b10 *
+b100 "
+b100 )
+b1 +
+b0 -
+b1000 ,
+1#
+#100
+0#
+#105
+b100 !
+b100 *
+b1 "
+b1 )
+b1 ,
+1#
+#110
+0#
+#115
+b1 -
+1#
+#120
+0#
+#125
+b10 -
+1#
+#130
+0#
+#135
+b10 +
+b11 -
+1#
+#140
+0#
+#145
+b100 !
+b100 *
+b10 "
+b10 )
+b100 +
+b0 -
+b10 ,
+1#
+#150
+0#
+#155
+b1 !
+b1 *
+b100 "
+b100 )
+b100 ,
+1#
+#160
+0#
+#165
+b1 -
+1#
+#170
+0#
+#175
+b10 -
+1#
+#180
+0#
+#185
+b1000 +
+b11 -
+1#
+#190
+0#
+#195
+b10 !
+b10 *
+b100 "
+b100 )
+b1 +
+b0 -
+b1000 ,
+1#
+#200
+0#
+#205
+b100 !
+b100 *
+b1 "
+b1 )
+b1 ,
+1#
+#210
+0#
+#215
+b1 -
+1#
