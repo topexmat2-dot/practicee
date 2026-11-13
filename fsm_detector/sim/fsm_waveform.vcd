@@ -1,0 +1,155 @@
+$date
+	Fri Nov 13 19:06:59 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mealy_1011_detect_tb $end
+$var wire 1 ! detected $end
+$var reg 1 " clk $end
+$var reg 1 # din $end
+$var reg 1 $ rst_n $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # din $end
+$var wire 1 $ rst_n $end
+$var parameter 2 % S_1 $end
+$var parameter 2 & S_10 $end
+$var parameter 2 ' S_101 $end
+$var parameter 2 ( S_NONE $end
+$var reg 1 ! detected $end
+$var reg 2 ) next_state [1:0] $end
+$var reg 2 * state [1:0] $end
+$upscope $end
+$scope task apply_bit $end
+$var reg 1 + bit_val $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 (
+b11 '
+b10 &
+b1 %
+$end
+#0
+$dumpvars
+x+
+b0 *
+b0 )
+0$
+0#
+0"
+0!
+$end
+#5
+1"
+#10
+0"
+#12
+1$
+#15
+1+
+1"
+#20
+0"
+#25
+b1 )
+1#
+1"
+#26
+0+
+#30
+0"
+#35
+b1 *
+b10 )
+0#
+1"
+#36
+1+
+#40
+0"
+#45
+b10 *
+b11 )
+1#
+1"
+#50
+0"
+#55
+b1 )
+1!
+b11 *
+1"
+#56
+0+
+#60
+0"
+#65
+b1 *
+0!
+b10 )
+0#
+1"
+#66
+1+
+#70
+0"
+#75
+b10 *
+b11 )
+1#
+1"
+#80
+0"
+#85
+1!
+b1 )
+b11 *
+1"
+#90
+0"
+#95
+0!
+b1 *
+1"
+#96
+0+
+#100
+0"
+#105
+b10 )
+0#
+1"
+#106
+1+
+#110
+0"
+#115
+b10 *
+b11 )
+1#
+1"
+#120
+0"
+#125
+b1 )
+1!
+b11 *
+1"
+#130
+0"
+#135
+0!
+b1 *
+1"
+#140
+0"
+#145
+1"
+#146
